@@ -1,20 +1,20 @@
 import './App.css';
-import { Terminal } from "lucide-react"
+import { AlertCircle } from "lucide-react"
  
 import {
   Alert,
   AlertDescription,
   AlertTitle,
-} from "@/components/ui/alert"
+} from "./components/ui/alert"
 
 function App() {
   return (
     <div className="App">
-      <Alert>
-        <Terminal className="h-4 w-4" />
-        <AlertTitle>Heads up!</AlertTitle>
+      <Alert variant="destructive">
+        <AlertCircle className="h-4 w-4" />
+        <AlertTitle>Error</AlertTitle>
         <AlertDescription>
-          You can add components to your app using the cli.
+          Finally it worked
         </AlertDescription>
       </Alert>
     </div>
